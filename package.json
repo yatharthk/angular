@@ -1,0 +1,16 @@
+{
+    "name": "try-angular-deploy",
+    "version": "1.0.0",
+    "main": "index.js",
+    "engines": {
+        "node": "^14.1.0"
+    },
+    "dependencies": {
+        "ejs": "3.1.6",
+        "express": "3.0.1",
+        "path": "0.12.7",
+        "body-parser": "1.19.0",
+        "compression": "1.7.4",
+        "mongoose": "5.12.5"
+    }
+}
