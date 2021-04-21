@@ -1,0 +1,18 @@
+<!-- <p>video-list works!</p> -->
+<br>
+<h2>Collection</h2>
+<hr>
+<div class="row">
+    <div *ngFor="let video of videoList" class="col-md-4 col-xs-12">
+        <div class="thumbnail">
+            <a routerLink="{{video.slug}}" routerLinkActive="active" *ngIf="video.image">
+                <img  [src]="video.image" alt="{{video.name}} image" class="img img-thumbnail">
+            </a>
+                <div class="caption">
+                    <h3><a routerLink="{{video.slug}}" routerLinkActive="active">{{video.name}}</a></h3>
+                    <p><a routerLink="{{video.slug}}" routerLinkActive="active" class="btn btn-primary" role="button">View</a></p>
+                </div>
+            </div>   
+        </div>
+</div> 
+        

@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+.main-container{
+    min-height: 800px;
+    margin-bottom: 20px;
+}
+
+.img-main-carousel-size{
+    margin-top: 10px;
+    max-height: 500px;
+    }
+
+.carousel-control.right,.carousel-control.left{
+    cursor: pointer;
+}

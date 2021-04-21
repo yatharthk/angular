@@ -1,0 +1,19 @@
+<p>video-detail works!</p>
+<div *ngIf="!video">Loading</div>
+
+    <h1>{{video?.name}}</h1>
+    
+    <hr/>
+    
+    <div *ngIf="video?.embed">
+        <iframe width="706" height="397" [src]="getEmbedUrl(video?.embed) | sanitizeUrl" 
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen >
+        </iframe>
+    </div>
+    <div *ngIf="!video?.embed" class="text-center">
+        <img [src]="video?.image" class="img-responsive"
+        alt="{{video?.name}}">
+    </div>

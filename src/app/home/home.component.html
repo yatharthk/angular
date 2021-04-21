@@ -1,0 +1,62 @@
+<div class="jumbotron">
+
+<div class="container col-sm-12">
+<carousel class="text-center">
+
+    <slide>
+        <a class="" routerLink="videos/">
+        <img  class="img-main-carousel-size" src="{{videoImageDefault}}" alt="Video List">
+        </a>
+        <div class="carousel-caption">
+            <h3>Video List</h3>
+            <p>Nulla vitae elit libero</p>
+            <p><a class="btn btn-primary" routerLink="videos/">View Videos</a></p>
+        </div>
+    </slide>
+
+
+    <slide *ngFor="let imageObj of homeImageList">
+        <a class="" routerLink="videos/{{imageObj.slug}}" (click)="preventNormal($event,imageObj)">
+        <img  class="img-main-carousel-size" [src]="imageObj.image" [alt]="imageObj.title">
+        </a>
+        <div class="carousel-caption">
+            <h3>{{imageObj.name}}</h3>
+            <p>Nulla vitae elit libero</p>
+            <p><a class="btn btn-primary" routerLink="videos/{{imageObj.slug}}">View</a></p>
+        </div>
+    </slide>
+
+    <!-- <slide>
+        <a class="" href="/video/video-1" #imageOne (click)="preventNormal($event,imageOne)">
+        <img  class="img-main-carousel-size" src="assets/images/nature/img1.jpg" alt="first-Slide">
+        </a>
+        <div class="carousel-caption">
+            <h3>First Slide label</h3>
+            <p>Nulla vitae elit libero</p>
+            <p><a class="btn btn-primary" href="/video/video-1">Video1</a></p>
+        </div>
+    </slide>
+    <slide>
+        <a class="" href="/video/video-2"  #imageTwo (click)="preventNormal($event,imageTwo)">
+            <img  class="img-main-carousel-size" src="assets/images/nature/img2.jpg" alt="second-Slide">
+        </a>
+        <div class="carousel-caption">
+            <h3>second Slide label</h3>
+            <p>Nulla vitae elit libero</p>
+            <p><a class="btn btn-primary" href="/video/video-2">Video2</a></p>
+        </div>
+    </slide>
+    <slide>
+        <a class="" href="/video/video-3"  #imageThree (click)="preventNormal($event,imageThree)">
+            <img class="img-main-carousel-size" src="assets/images/nature/img3.jpg" alt="third-Slide">
+            </a>
+        <div class="carousel-caption">
+            <h3>third Slide label</h3>
+            <p>Nulla vitae elit libero</p>
+            <p><a class="btn btn-primary" href="/video/video-3">Video3</a></p>
+        </div>
+    </slide> -->
+
+</carousel>
+</div>
+</div>

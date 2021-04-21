@@ -1,0 +1,8 @@
+<!-- <p>search works!</p> -->
+{{queryFromParent}}
+<form class="d-flex" #searchForm="ngForm" (ngSubmit)='searchTerm(searchForm)'>
+    <input class="form-control me-2" type="search" placeholder="Search" 
+     aria-label="Search" name="searchQuery" 
+     [(ngModel)]="searchQuery">
+    <button class="btn btn-outline-success" type="submit" >Search</button>
+  </form>

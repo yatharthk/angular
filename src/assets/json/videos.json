@@ -1,0 +1,49 @@
+[
+    {
+        "name":"Welcome",
+        "slug":"video-1",
+        "embed":"-eVWok4xf3U",
+        "image":"assets/images/nature/img1.jpg",
+        "featured":true
+    },
+
+    {
+        "name":"Item 2",
+        "slug":"video-2",
+        "embed":"-eVWok4xf3U",
+        "image":"assets/images/nature/img2.jpg",
+        "featured":true
+    },
+        
+    {
+        "name":"Item 3",
+        "slug":"video-3",
+        "embed":null,
+        "image":"assets/images/nature/img3.jpg",
+        "featured":false
+    },
+    {
+        "name":"Welcome",
+        "slug":"video-1",
+        "embed":"-eVWok4xf3U",
+        "image":"assets/images/nature/img1.jpg",
+        "featured":true
+    },
+
+    {
+        "name":"Item 2",
+        "slug":"video-2",
+        "embed":"-eVWok4xf3U",
+        "image":"assets/images/nature/img2.jpg",
+        "featured":true
+    },
+        
+    {
+        "name":"Item 3",
+        "slug":"video-3",
+        "embed":null,
+        "image":"assets/images/nature/img3.jpg",
+        "featured":false
+    }
+    
+]
